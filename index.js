@@ -27,7 +27,7 @@ function currentLine(katzDeliLine) {
   var queue = []
   for (let n = 0; n < katzDeliLine.length; n++)
     queue = queue.concat(` ${n+1}. ${katzDeliLine[n]}`)
-    return ('The line is currently:'+queue)
+    console.log('The line is currently:'+queue)
     if (katzDeliLine.length === 0) {
       return ('The line is currently empty.')
  }
