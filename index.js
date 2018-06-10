@@ -26,10 +26,10 @@ nowServing(katzDeliLine)
 function currentLine(katzDeliLine) {
   var queue = []
   for (let n = 0; n < katzDeliLine.length; n++)
-  if (katzDeliLine.length === 0) {
-    return ('The line is currently empty.')
     queue = queue.concat(` ${n+1}. ${katzDeliLine[n]}`)
     return ('The line is currently:'+queue)
+    if (katzDeliLine.length === 0) {
+      return ('The line is currently empty.')
  }
 }
 currentLine(["Bill", "Jane", "Ann"])
