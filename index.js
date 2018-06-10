@@ -13,7 +13,7 @@ takeANumber(katzDeliLine, deliLine[1]);
 takeANumber(katzDeliLine, deliLine[2]);
 
 function nowServing(position) {
-  for (let i = 0; i < (position.length + 2); i++) {
+  for (let i = 0; i < (position.length + 1); i++) {
     if (position.length > 0) {
      return 'Currently serving ' + position.shift() + '.';
     } else {
